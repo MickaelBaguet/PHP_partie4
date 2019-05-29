@@ -24,17 +24,17 @@
         // Définition de la fonction
         function comparNbr($nbr1, $nbr2) {
           if ($nbr1 > $nbr2) {
-            return "Le premier nombre est plus grand.";
+            return 'Le premier nombre est plus grand.';
           } elseif ($nbr1 < $nbr2) {
-            return "Le premier nombre est plus petit.";
+            return 'Le premier nombre est plus petit.';
           } else {
-            return "Les deux nombres sont identiques.";
+            return 'Les deux nombres sont identiques.';
           }
         }
         // Appel de la fonction
         $res = comparNbr(9,6);
-        echo "<p>Premier paramètre = 9, deuxième paramètre = 6</p>";
-        echo "<p>$res</p>";
+        echo '<p>Premier paramètre = 9, deuxième paramètre = 6</p>';
+        echo '<p>'.$res.'</p>';
       ?>
   </div>
 </body>

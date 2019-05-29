@@ -23,8 +23,8 @@ Tous les paramètres doivent avoir une valeur par défaut.</p>
         }
         // Appel de la fonction
         $res = add(9,8,7);
-        echo "<p>Premier paramètre = 9, deuxième paramètre = 8, troisième paramètre = 7</p>";
-        echo "<p>Résultat : $res</p>";
+        echo '<p>Premier paramètre = 9, deuxième paramètre = 8, troisième paramètre = 7</p>';
+        echo '<p>Résultat : '.$res.'</p>';
       ?>
   </div>
 </body>

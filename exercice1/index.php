@@ -22,7 +22,7 @@
     }
     // Appel de la fonction
     $res = retour();
-    echo "Valeur retournée par la fonction = $res";
+    echo 'Valeur retournée par la fonction = '.$res;
     ?>
   </div>
 </body>

@@ -21,9 +21,9 @@
       return $str1.$str2;
     }
     // Appel de la fonction
-    $res = concatString("Bonjour ","tout le monde!");
-    echo "<p>Premier paramètre = 'Bonjour', deuxième paramètre = 'tout le monde!'</p>";
-    echo "<p>Valeur retournée par la fonction = $res</p>";
+    $res = concatString('Bonjour ','tout le monde!');
+    echo '<p>Premier paramètre = "Bonjour", deuxième paramètre = "tout le monde!"</p>';
+    echo '<p>Valeur retournée par la fonction = '.$res.'</p>';
     ?>
   </div>
 </body>

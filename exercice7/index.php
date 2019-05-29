@@ -18,26 +18,26 @@
       <?php
         // Définition de la fonction
         function test($age, $gender) {
-          if ($gender == "femme") {
+          if ($gender == 'femme') {
             if ($age < 18) {
-              return "Vous êtes une femme et vous êtes mineur (Age = $age, Genre = $gender)";
+              return 'Vous êtes une femme et vous êtes mineur (Age = '.$age.', Genre = '.$gender.')';
             } else {
-              return "Vous êtes une femme et vous êtes majeur (Age = $age, Genre = $gender)";
+              return 'Vous êtes une femme et vous êtes majeur (Age = '.$age.', Genre = '.$gender.')';
             }
           } else {
             if (condition) {
               if ($age < 18) {
-                return "Vous êtes un homme et vous êtes mineur (Age = $age, Genre = $gender)";
+                return 'Vous êtes un homme et vous êtes mineur (Age = '.$age.', Genre = '.$gender.')';
               } else {
-                return "Vous êtes un homme et vous êtes majeur (Age = $age, Genre = $gender)";
+                return 'Vous êtes un homme et vous êtes majeur (Age = '.$age.', Genre = '.$gender.')';
               }
             }
           }
         }
         // Appel de la fonction
-        $res = test(17,"homme");
-        echo "<p>Premier paramètre = '17', deuxième paramètre = 'homme'</p>";
-        echo "<p>Résultat : $res</p>";
+        $res = test(17,'homme');
+        echo '<p>Premier paramètre = "17", deuxième paramètre = "homme"</p>';
+        echo '<p>Résultat : '.$res.'</p>';
       ?>
   </div>
 </body>

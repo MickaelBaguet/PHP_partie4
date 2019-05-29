@@ -21,9 +21,9 @@
           return "$nbr $str";
         }
         // Appel de la fonction
-        $res = concat(9,"neuf");
-        echo "<p>Premier paramètre = 9, deuxième paramètre = 'neuf'</p>";
-        echo "<p>Résultat : $res</p>";
+        $res = concat(9,'neuf');
+        echo '<p>Premier paramètre = 9, deuxième paramètre = "neuf"</p>';
+        echo '<p>Résultat : '.$res.'</p>';
       ?>
   </div>
 </body>

@@ -19,12 +19,12 @@
       <?php
         // Définition de la fonction
         function concat($firstName, $lastName, $age) {
-          return "Bonjour $firstName $lastName tu as $age ans.";
+          return 'Bonjour '.$firstName.' '.$lastName.' tu as '.$age.' ans.';
         }
         // Appel de la fonction
-        $res = concat("Mickael","Baguet",15);
-        echo "<p>Premier paramètre = 'Mickael', deuxième paramètre = 'Baguet', troisième = '15'</p>";
-        echo "<p>Résultat : $res</p>";
+        $res = concat('Mickael','Baguet',15);
+        echo '<p>Premier paramètre = "Mickael", deuxième paramètre = "Baguet", troisième = "15"</p>';
+        echo '<p>Résultat : '.$res.'</p>';
       ?>
   </div>
 </body>

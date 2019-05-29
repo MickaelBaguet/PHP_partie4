@@ -21,8 +21,8 @@
       return $string;
     }
     // Appel de la fonction
-    $res = returnString("Bonjour");
-    echo "Valeur retournée par la fonction = $res";
+    $res = returnString('Bonjour');
+    echo 'Valeur retournée par la fonction = '.$res;
     ?>
   </div>
 </body>
