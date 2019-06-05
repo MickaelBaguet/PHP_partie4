@@ -18,18 +18,14 @@
     <?php
       // Définition de la fonction
       function test($age, $gender) {
-        if ($gender == 'femme') {
-          if ($age < 18) {
-            return 'Vous êtes une femme et vous êtes mineur.';
-          } else {
-            return 'Vous êtes une femme et vous êtes majeur.';
-          }
+        if (($gender == 'femme') && ($age < 18))  {
+          return 'Vous êtes une femme et vous êtes mineur.';
+        } elseif (($gender == 'homme') && ($age < 18)) {
+          return 'Vous êtes un homme et vous êtes mineur.';
+        } elseif (($gender == 'homme') && ($age > 18)) {
+          return 'Vous êtes un homme et vous êtes majeur.';
         } else {
-          if ($age < 18) {
-            return 'Vous êtes un homme et vous êtes mineur.';
-          } else {
-            return 'Vous êtes un homme et vous êtes majeur.';
-          }
+          return 'Vous êtes une femme et vous êtes majeur.';
         }
       }
       // Appel de la fonction
