@@ -14,31 +14,33 @@
         <p class="lead">TEn allant de 1 à 100 avec un pas de 15, afficher le message On tient le bon bout.</p>
       </div>
     </div>
-      <!-- Balise signifiant que la suite est en PHP -->
-      <?php
-        // Définition de la fonction
-        function test($age, $gender) {
-          if ($gender == 'femme') {
-            if ($age < 18) {
-              return 'Vous êtes une femme et vous êtes mineur (Age = '.$age.', Genre = '.$gender.')';
-            } else {
-              return 'Vous êtes une femme et vous êtes majeur (Age = '.$age.', Genre = '.$gender.')';
-            }
+    <!-- Balise signifiant que la suite est en PHP -->
+    <?php
+      // Définition de la fonction
+      function test($age, $gender) {
+        if ($gender == 'femme') {
+          if ($age < 18) {
+            return 'Vous êtes une femme et vous êtes mineur.';
           } else {
-            if (condition) {
-              if ($age < 18) {
-                return 'Vous êtes un homme et vous êtes mineur (Age = '.$age.', Genre = '.$gender.')';
-              } else {
-                return 'Vous êtes un homme et vous êtes majeur (Age = '.$age.', Genre = '.$gender.')';
-              }
-            }
+            return 'Vous êtes une femme et vous êtes majeur.';
+          }
+        } else {
+          if ($age < 18) {
+            return 'Vous êtes un homme et vous êtes mineur.';
+          } else {
+            return 'Vous êtes un homme et vous êtes majeur.';
           }
         }
-        // Appel de la fonction
-        $res = test(17,'homme');
-        echo '<p>Premier paramètre = "17", deuxième paramètre = "homme"</p>';
-        echo '<p>Résultat : '.$res.'</p>';
-      ?>
+      }
+      // Appel de la fonction
+      $age = rand(7, 77);
+      $index = rand(0, 1);
+      $genre = array('homme', 'femme');
+      // $genre[$index] pour gérer l'aléatoire pour les genres
+      $res = test($age,$genre[$index]);
+    ?>
+    <p>Premier paramètre = "<?= $age ?>", deuxième paramètre = "<?= $genre[$index] ?>"</p>
+    <p>Résultat : <?= $res ?></p>
   </div>
 </body>
 </html>

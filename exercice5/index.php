@@ -11,20 +11,21 @@
       <div class="container">
         <h1 class="display-3">Exercice 5 - PHP</h1>
         <h3>Partie 4</h3>
-        <p class="lead">Faire une fonction qui prend en paramètre un nombre et une chaine de caractères et qui renvoit la concaténation de ces deux paramètres.</p>
+        <p class="lead">Faire une fonction qui prend en paramètre un nombre et une chaine de caractères
+          et qui renvoit la concaténation de ces deux paramètres.</p>
       </div>
     </div>
-      <!-- Balise signifiant que la suite est en PHP -->
-      <?php
-        // Définition de la fonction
-        function concat($nbr, $str) {
-          return "$nbr $str";
-        }
-        // Appel de la fonction
-        $res = concat(9,'neuf');
-        echo '<p>Premier paramètre = 9, deuxième paramètre = "neuf"</p>';
-        echo '<p>Résultat : '.$res.'</p>';
-      ?>
+    <!-- Balise signifiant que la suite est en PHP -->
+    <?php
+      // Définition de la fonction
+      function concat($nbr, $str) {
+        return $nbr.' '.$str;
+      }
+      // Appel de la fonction
+      $res = concat(9,'neuf');
+    ?>
+    <p>Premier paramètre = 9, deuxième paramètre = "neuf"</p>
+    <p>Résultat : <?= $res ?></p>
   </div>
 </body>
 </html>

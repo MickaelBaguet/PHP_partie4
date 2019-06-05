@@ -16,13 +16,13 @@
     </div>
     <!-- Balise signifiant que la suite est en PHP -->
     <?php
-    // Définition de la fonction
-    function retour() {
-      return true;
-    }
-    // Appel de la fonction
-    $res = retour();
-    echo 'Valeur retournée par la fonction = '.$res;
+      // Définition de la fonction
+      function retour() {
+        return true;
+      }
+      // Appel de la fonction
+      $res = retour();
+      echo 'Valeur retournée par la fonction = '.$res;
     ?>
   </div>
 </body>

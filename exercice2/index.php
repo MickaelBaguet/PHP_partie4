@@ -11,18 +11,19 @@
       <div class="container">
         <h1 class="display-3">Exercice 2 - PHP</h1>
         <h3>Partie 4</h3>
-        <p class="lead">Faire une fonction qui prend en paramètre une chaine de caractères et qui retourne cette même chaine.</p>
+        <p class="lead">Faire une fonction qui prend en paramètre une chaine de caractères et qui
+          retourne cette même chaine.</p>
       </div>
     </div>
     <!-- Balise signifiant que la suite est en PHP -->
     <?php
-    // Définition de la fonction
-    function returnString($string) {
-      return $string;
-    }
-    // Appel de la fonction
-    $res = returnString('Bonjour');
-    echo 'Valeur retournée par la fonction = '.$res;
+      // Définition de la fonction
+      function returnString($string) {
+        return $string;
+      }
+      // Appel de la fonction
+      $res = returnString('Bonjour');
+      echo 'Valeur retournée par la fonction = '.$res;
     ?>
   </div>
 </body>

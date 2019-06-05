@@ -11,20 +11,21 @@
       <div class="container">
         <h1 class="display-3">Exercice 3 - PHP</h1>
         <h3>Partie 4</h3>
-        <p class="lead">Faire une fonction qui prend en paramètre deux chaines de caractères et qui revoit la concaténation de ces deux chaines</p>
+        <p class="lead">Faire une fonction qui prend en paramètre deux chaines de caractères et qui
+          revoit la concaténation de ces deux chaines</p>
       </div>
     </div>
     <!-- Balise signifiant que la suite est en PHP -->
     <?php
-    // Définition de la fonction
-    function concatString($str1, $str2) {
-      return $str1.$str2;
-    }
-    // Appel de la fonction
-    $res = concatString('Bonjour ','tout le monde!');
-    echo '<p>Premier paramètre = "Bonjour", deuxième paramètre = "tout le monde!"</p>';
-    echo '<p>Valeur retournée par la fonction = '.$res.'</p>';
+      // Définition de la fonction
+      function concatString($str1, $str2) {
+        return $str1.$str2;
+      }
+      // Appel de la fonction
+      $res = concatString('Bonjour ','tout le monde!');
     ?>
+    <p>Premier paramètre = "Bonjour", deuxième paramètre = "tout le monde!"</p>
+    <p>Valeur retournée par la fonction = <?= $res ?></p>
   </div>
 </body>
 </html>
