@@ -18,7 +18,7 @@
     <!-- Balise signifiant que la suite est en PHP -->
     <?php
       // Définition de la fonction
-      // ajout de valeur par défaut sur les arguments
+      // Ajout de valeur par défaut sur les arguments
       function add($nbr1=1, $nbr2=2, $nbr3=3) {
         return $nbr1+$nbr2+$nbr3;
       }
